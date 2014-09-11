@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="../js/jquery-1.11.1.js"></script>
+    <script src="../js/tabs.js"></script>
+    <link href="../css/tabs.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.17.2/build/cssreset/cssreset-min.css">
+    <title>My Cool Website</title>
+  </head>
+
+  <body>
+    <ul class='tabs' data-content-tabs="#content-tabs">
+      <li><a href="#bassett" class="active">bassett</a></li>
+      <li><a href="#lab">black lab</a></li>
+      <li><a href="#corgi">corgi</a></li>
+    </ul>
+    <div id="content-tabs">
+      <div class="active tab-pane" id="bassett">
+        <p>bassett hound</p>
+      </div>
+      <div class="tab-pane" id="lab">
+        <p>black lab</p>
+      </div>
+      <div class="tab-pane" id="corgi">
+        <p>corgi</p>
+      </div>
+      
+    </div>
+    <script>
+      $(function() {
+        $('.tabs').tabs();
+      })
+    </script>
+  </body>
+</html>
