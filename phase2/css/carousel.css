@@ -1,0 +1,51 @@
+.carousel {
+  height: 300px;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.carousel > .items {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.carousel .items > img {
+  position: absolute;
+  width: 100%;
+  top: 0;
+ 
+}
+/*set all images to be not displayed, then display the active image*/
+/*img {
+  display: none;
+}*/
+
+img.active {
+  left: 0;
+  transition: left .2s linear;
+}
+
+img:not(.active) {
+  display: none;
+}
+
+img.active.left {
+  left: -100%;
+}
+
+img.active.right {
+  left: 100%;
+}
+
+
+a.slide-left {
+  float: left;
+  display: inline-block;
+}
+
+a.slide-right {
+  float: right;
+  display: inline-block;
+}
