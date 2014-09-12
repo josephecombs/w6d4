@@ -1,0 +1,36 @@
+div.thumbnails {
+  height: 350px;
+  width: 300px;
+  border: 3px solid black;
+  position: relative;
+}
+
+.thumbnails > .items > img {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: none;
+}
+ 
+.thumbnails > .items > img.active {
+  display: block;
+}
+
+.go-right {
+  float: right;
+}
+
+.go-left {
+  float: left;
+}
+
+.gutter * {
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+
+}
+
+.gutter > img.active {
+  border: 3px solid black;
+}

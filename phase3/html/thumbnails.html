@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="../js/jquery-1.11.1.js"></script>
+    <script src="../js/thumbnails.js"></script>
+    <link href="../css/thumbnails.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.17.2/build/cssreset/cssreset-min.css">
+    <title>Thumbnails</title>
+  </head>
+
+  <body>
+   <div class="thumbnails">
+      <div class="items">
+        <img src="../images/animal1.jpg">
+        <img src="../images/animal2.jpg" class="active">
+        <img src="../images/animal3.jpg">
+        <img src="../images/animal4.jpg">
+        <img src="../images/animal5.jpg">
+      </div>
+      <div class="img-nav">
+        <a href="javascript:void(0)" class="go-right">></a>
+        <a href="javascript:void(0)" class="go-left"><</a>    
+        <ul class="gutter">
+        </ul>
+      </div>
+   </div>
+   
+ 
+    
+    <script>
+    $(function() {
+      $('.thumbnails').thumbnails();
+    })
+    </script>
+  </body>
+</html>
